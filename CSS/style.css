@@ -1,0 +1,80 @@
+
+#header{
+    width:20%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#2b2a2a;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica;
+    font-size: large;
+    color: #fff;
+    border-radius: 10px;
+    }
+
+    body {
+        background:#323232;
+        /* background-image: url('../Image/backgroud.png'); */
+        background-size: cover;
+        /* background-position-y: -200px; */
+    }
+
+    .central {
+        /* alinhamento central vertical texto */
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        padding: 1px;
+        align-items:center;
+      }
+    
+  #conteudo{
+    width:100%;
+    height:100px;
+    /* background-color:#fff; */
+  }
+  
+ /* #footer{
+    width:100%;
+    height:100px;
+    background-color:#fff;
+    border-radius: 25px;
+    } */
+
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+    font-family:Helvetica;
+    color: #323232;
+}
+ 
+#tabela{
+    width:100%;
+    border:solid 1px;
+    text-align:left;
+    border-collapse:collapse;
+}
+ 
+#tabela tbody tr{
+    border:solid 1px;
+    height:30px;
+}
+ 
+#tabela thead, tr, td{
+    background:#fff;
+}
+ 
+#tabela thead th:nth-child(1){
+    width:100px;
+}
+ 
+#tabela input{
+    /* cor da letra da serachview */
+    color: #323232;
+    width:100%;
+}

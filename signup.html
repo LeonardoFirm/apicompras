@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/signup.css">
+</head>
+
+<body>
+
+    <div id="login-container">
+        <form action="https://sheetdb.io/api/v1/8bv9f2ns4643g" method="post" id="sheetsdb-form">
+            <h1>Cadastre-se</h1><br>
+            <p>Por favor, preencha este formulário para criar uma conta.</p><br>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="data[email]" id="email" placeholder="Digite seu e-mail" autocomplete="off" required>
+            <label for="password">Senha</label>
+            <input type="password" name="data[password]" id="password" placeholder="Digite sua senha" required>
+            <label for="password-repeat">Repita sua Senha</label>
+            <input type="password" name="data[password-repeat]" id="password-repeat" placeholder="Digite sua senha novamente" required>
+
+            <div id="clearfix">
+                <a href="login.html"></a>
+                <input type="submit" value="Cadastrar"></input>
+            </div>
+    </div>
+    </form>
+
+    <script>
+
+        var form = document.getElementById('sheetsdb-form');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("sheetsdb-form")),
+            }).then(
+                response => response.json()
+            ).then((html) => {
+                // Você pode colocar qualquer código JS aqui
+                window.open('index.html', '_blank')
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -9,6 +9,10 @@
   border: none;
 }
 
+h1 {
+  color:#FFF;
+}
+
 body {
   background-color: #323232;
   /* background-image: url('../Image/backgroud.png'); */
@@ -22,6 +26,7 @@ textarea:focus, input:focus {
 
 a, label {
   font-size: .8rem;
+  color: #FFF;
 }
 
 a:hover {
@@ -90,4 +95,8 @@ input[type="submit"] {
 input[type="submit"]:hover{
   background-color: #1B223C;
   transition: .5s;
+}
+
+p {
+  color: #FFF;
 }

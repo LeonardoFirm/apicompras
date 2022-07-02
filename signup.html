@@ -19,23 +19,21 @@
             <p>Por favor, preencha este formulário para criar uma conta.</p><br>
 
             <label for="email">E-mail</label>
-            <input type="text" name="data[email]" id="email" placeholder="Digite seu e-mail" autocomplete="off" required>
+            <input type="email" name="data[email]" id="email" placeholder="Digite seu e-mail" autocomplete="off" required>
             <label for="password">Senha</label>
             <input type="password" name="data[password]" id="password" placeholder="Digite sua senha" required>
             <label for="password-repeat">Repita sua Senha</label>
             <input type="password" name="data[password-repeat]" id="password-repeat" placeholder="Digite sua senha novamente" required>
 
-            <div id="clearfix">
-                <a href="login.html"></a>
-                <input type="submit" value="Cadastrar"></input>
-            </div>
+                <button class="button button1">Cadastrar</button>
+
     </div>
     </form>
 
     <script>
 
         var form = document.getElementById('sheetsdb-form');
-        form.addEventListener("submit", e => {
+        form.addEventListener("button button1", e => {
             e.preventDefault();
             fetch(form.action, {
                 method: "POST",
@@ -46,6 +44,7 @@
                 // Você pode colocar qualquer código JS aqui
                 window.open('index.html', '_blank')
             });
+        });
         });
 
     </script>

@@ -13,28 +13,41 @@
 
 <body>
 
-    <div id="login-container">
+    <div class='container'>
+        <div class='card'>
 
-        <h1>Suprint - Compras</h1>
-        <form action="products.html">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off" required>
-            <label for="password">Senha</label>
-            <input type="password" name="senha" id="password" placeholder="Digite sua senha" required>
-            <a href="#" id="forgot-pass">Esqueceu a senha?</a>
-            <input type="submit" value="Acessar">
-        </form>
-        <!-- <div id="social-container">
+            <h1>Suprint - Compras</h1>
+            <form action="products.html">
+                <div class='label-float'>
+                    <input type='text' id='usuario' paceholder='' required>
+                    <label id='userLabel' for='usuario'>Usuario</label>
+                </div>
+                <div class='label-float'>
+                    <input type='password' id='senha' paceholder='' required>
+                    <label id='senhaLabel' for='senha'>Senha</label>
+
+                    <div class='justify-center'>
+                        <button onclick='entrar()'>Entrar</button>
+                    </div>
+            </form>
+            <div class='justify-center'>
+            </div>
+
+            <!-- <div id="social-container">
             <p>Ou entre elas suas redes sociais</p>
             <i class="fa fa-facebook-f"></i>
             <i class="fa fa-linkedin"></i>
         </div>-->
-           <div id="resgister-container">
-                <p>Ainda não tem uma conta</p>
-                <a href="signup.html">Registrar</a>
-            </div>
-    </div>
 
+        </div>
+    </div>
+    </div>
+    <div class="justify-center">
+        <footer>
+            <p>Criador: Leonardo Firme</p>
+            <p><a href="leonardo.ads.ti@gmail.com">leonardo.ads.ti@gmail.com</a></p>
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -46,6 +46,17 @@ h2 {
   box-shadow: 3px 3px 1px 0px #3f3f3f80;
 }
 
+h3 {
+  width: auto;
+  border-radius: 10px;
+  margin-top: .5rem;
+  text-align: center;
+  padding: 20px;
+  background-color: DarkSalmon;
+  color: #272262;
+  box-shadow: 3px 3px 1px 0px #3f3f3f80;
+}
+
 .label-float input{
   width: 100%;
   padding: 5px 5px;

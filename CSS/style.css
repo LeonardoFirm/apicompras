@@ -110,6 +110,27 @@ button:hover{
   color: #fff;
 }
 
+button1{
+  background-color: #fff;
+  border-color: #272262;
+  color: #272262;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  width: auto;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button1:hover{
+  background-color: #a02121;
+  color: #fff;
+}
+
 .justify-center{
   display: flex;
   justify-content: center;

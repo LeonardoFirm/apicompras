@@ -1,109 +1,154 @@
-#header {
-    width: 20%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #2b2a2a;
-    align-items: center;
-    justify-content: center;
-    font-family: Helvetica;
-    font-size: large;
-    color: #fff;
-    border-radius: 10px;
-}
-
-body {
-    background: #323232;
-    /* background-image: url('../Image/backgroud.png'); */
-    background-size: cover;
-    /* background-position-y: -200px; */
-}
-
-.central {
-    /* alinhamento central vertical texto */
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    padding: 1px;
-    align-items: center;
-}
-
-.button {
-    border: none;
-    color: white;
-    padding: 1px 3px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
-    border-radius: 10px;
-    width: 100px;
-    height: 50px;
-    font-size: 16px;
-    margin: 10px 47%;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  
-  .button1 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #08558B;
-  }
-  
-  .button1:hover {
-    background-color: #08558B;
-    color: white;
-  }
-
-#conteudo {
-    width: 100%;
-    height: 100px;
-    /* background-color:#fff; */
-}
-
-/* #footer{
-    width:100%;
-    height:100px;
-    background-color:#fff;
-    border-radius: 25px;
-    } */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-    font-family: Helvetica;
-    color: #323232;
+  background-image: url('../Image/montain2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+  
 }
 
-#tabela {
-    width: 100%;
-    border: solid 1px;
-    text-align: left;
-    border-collapse: collapse;
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
 }
 
-#tabela tbody tr {
-    border: solid 1px;
-    height: 30px;
+.card {
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000060;
+  width: 400px;
 }
 
-#tabela thead,
-tr,
-td {
-    background: #fff;
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #272262
 }
 
-#tabela thead th:nth-child(1) {
-    width: 100px;
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #272262;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
 }
 
-#tabela input {
-    /* cor da letra da serachview */
-    color: #323232;
-    width: 100%;
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #4038a0;
+}
+
+.label-float label{
+  color: #272262;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #4038a0
+}
+
+button{
+  background-color: transparent;
+  border-color: #272262;
+  color: #272262;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #272262;
+  color: #fff;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+hr{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+}
+
+p{
+  color: #272262;
+  font-size: 14pt;
+  text-align: center;
+}
+
+a{
+  color: #7a3077;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+a:hover{
+  color: #272262;
+}
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #272262;
+}
+
+ #msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+footer {
+  width: 25%;
+  border-radius: 10px;
+  margin-top: 17rem;
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  box-shadow: 3px 3px 1px 0px #3f3f3f80;
 }

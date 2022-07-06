@@ -27,6 +27,8 @@ body {
   border-radius: 4%;
   box-shadow: 3px 3px 1px 0px #00000060;
   width: 400px;
+  height: 400px;
+  text-align: center;
 }
 
 h1{
@@ -110,48 +112,6 @@ button:hover{
   color: #fff;
 }
 
-button1{
-  background-color: #fff;
-  border-color: #272262;
-  color: #272262;
-  padding: 7px;
-  font-weight: bold;
-  font-size: 12pt;
-  width: auto;
-  margin-top: 15px;
-  margin-left: 15px;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-  transition: all .4s ease-out;
-}
-
-button1:hover{
-  background-color: #a02121;
-  color: #fff;
-}
-
-button2{
-  background-color: #272262;
-  border-color: #272262;
-  color: #fff;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 12pt;
-  width: 10%;
-  margin-top: 15px;
-  margin-left: 25px;
-  margin-bottom: 400px;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-  transition: all .4s ease-out;
-}
-
-button2:hover{
-  background-color: #a02121;
-  color: #fff;
-}
 
 .justify-center{
   display: flex;

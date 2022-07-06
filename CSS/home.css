@@ -48,6 +48,17 @@ h2 {
   box-shadow: 3px 3px 1px 0px #3f3f3f80;
 }
 
+h3 {
+  width: auto;
+  border-radius: 10px;
+  margin-top: .5rem;
+  text-align: center;
+  padding: 20px;
+  background-color: DarkSalmon;
+  color: #272262;
+  box-shadow: 3px 3px 1px 0px #3f3f3f80;
+}
+
 .label-float input{
   width: 100%;
   padding: 5px 5px;
@@ -99,7 +110,7 @@ button{
   font-weight: bold;
   font-size: 12pt;
   width: 10%;
-  margin-top: 15px;
+  margin-top: 50px;
   margin-left: 15px;
   border-radius: 4px;
   cursor: pointer;
@@ -126,7 +137,7 @@ hr{
 
 p{
   color: #272262;
-  font-size: 14pt;
+  font-size: 10pt;
   text-align: center;
 }
 
@@ -166,7 +177,7 @@ footer {
   padding: 3px;
   background-color: DarkSalmon;
   color: white;
-  box-shadow: 3px 3px 1px 0px #3f3f3f80;
+  box-shadow: 3px 3px 1px 0px #504f4f80;
 }
 
 .td {

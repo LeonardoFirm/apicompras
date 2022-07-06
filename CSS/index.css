@@ -1,132 +1,154 @@
-/* Gerar */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Helvetica;
-    color: #323232;
-    border: none;
-}
-
-h1 {
-    color:#FFF;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #323232;
-    /* background-image: url('../Image/backgroud.png'); */
-    background-size: cover;
-   /* background-position-y: -200px; */
+  background-image: url('../Image/montain.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+  
 }
 
-textarea:focus, input:focus {
-    outline: none;
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
 }
 
-a, label {
-    font-size: .8rem;
-    color: #FFF;
+.card {
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000060;
+  width: 400px;
 }
 
-a:hover {
-    color: #08558B;
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #272262
 }
 
-/* Container Login */
-
-#login-container {
-    background-color: #2b2a2a;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 30px;
-    margin-top: 25vh;
-    border-radius: 10px;
-    text-align: center;
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #272262;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
 }
 
-/* Formulário */
-
-form {
-    margin-top: 30px;
-    margin-bottom: 40px;
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-label, input {
-    display: block;
-    width: 100%;
-    text-align: left;
+.label-float input:focus{
+  border-bottom: 2px solid #4038a0;
 }
 
-label {
-    font-weight: bold;
+.label-float label{
+  color: #272262;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
 }
 
-input {
-    border-bottom: 2px solid #323232;
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 20px;
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #4038a0
 }
 
-input:focus {
-    border-bottom: 2px solid #08558B;
+button{
+  background-color: transparent;
+  border-color: #272262;
+  color: #272262;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
 }
 
-#forgot-pass {
-    text-align: right;
-    display: block;
+button:hover{
+  background-color: #272262;
+  color: #fff;
 }
 
-input[type="submit"] {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    height: 40px;
-    border-radius: 20px;
-    margin-top: 30px;
-    color: #FFF;
-    background-color: #08558B;
-    cursor: pointer;
+.justify-center{
+  display: flex;
+  justify-content: center;
 }
 
-input[type="submit"]:hover{
-    background-color: #1B223C;
-    transition: .5s;
+hr{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
 }
 
-p {
-    color: #FFF;
+p{
+  color: #272262;
+  font-size: 14pt;
+  text-align: center;
 }
 
-/* Redes sociais */
-
-/* #social-container, #social-container p {
-    margin-bottom: 20px;
+a{
+  color: #7a3077;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out;
 }
 
-/* #social-container i {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    line-height: 40px;
-    color: #FFF;
-    margin: 0 5px;
-    cursor: pointer;
+a:hover{
+  color: #272262;
 }
 
-/* .fa-facebook-f {
-    background-color: #3B5998;
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #272262;
 }
 
-/* .fa-linkedin {
-    background-color: #0077B5;
+ #msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
 }
 
-/* Registrar */ 
-
-/* #registrar-container p {
-    margin-bottom: 10px;
+footer {
+  width: 25%;
+  border-radius: 10px;
+  margin-top: 17rem;
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  box-shadow: 3px 3px 1px 0px #3f3f3f80;
 }

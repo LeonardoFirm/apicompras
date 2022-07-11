@@ -23,7 +23,7 @@ body {
 
 .card {
   background-color: #2c2c2c;
-  padding: 30px;
+  padding: 50px;
   border-radius: 4%;
   box-shadow: 3px 3px 1px 0px #00000060;
   width: 400px;
@@ -93,8 +93,8 @@ h3 {
 button{
   background-color: transparent;
   color: #fff;
-  width: 40%;
-  padding: 20px;
+  width: 30%;
+  padding: 15px;
   font-weight: bold;
   font-size: 12pt;
   margin-top: 20px;

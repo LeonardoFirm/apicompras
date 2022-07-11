@@ -92,10 +92,9 @@ h3 {
 
 button{
   background-color: transparent;
-  border-color: #fff;
   color: #fff;
   width: 40%;
-  padding: 10px;
+  padding: 20px;
   font-weight: bold;
   font-size: 12pt;
   margin-top: 20px;
@@ -106,7 +105,7 @@ button{
 }
 
 button:hover{
-  background-color: #058a1b;
+  background-color: #02022b;
   color: #fff;
 }
 

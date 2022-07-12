@@ -8,7 +8,7 @@
 
 body {
   /*background-image: url('../Image/montain.jpg');*/
-  background-color: rgb(10, 10, 9);
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed
@@ -23,7 +23,7 @@ body {
 }
 
 .card {
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(240, 238, 238);
   padding: 30px;
   border-radius: 4%;
   box-shadow: 3px 3px 1px 0px #00000060;
@@ -33,7 +33,7 @@ body {
 h1{
   text-align: center;
   margin-bottom: 20px;
-  color: #fff
+  color: #323232;
 }
 
 /*h2 {
@@ -122,7 +122,7 @@ button:hover{
   color: #fff;
 }
 
-button1{
+/*button1{
   background-color: transparent;
   border-color: transparent;
   color: #fff;
@@ -132,7 +132,7 @@ button1{
   width: auto;
   margin-top: 15px;
   margin-left: 15px;
-  border-radius: 4px;
+  border-radius: 40px;
   cursor: pointer;
   outline: none;
   transition: all .4s ease-out;
@@ -141,7 +141,7 @@ button1{
 button1:hover{
   background-color: #a02121;
   color: #fff;
-}
+}*/
 
 .justify-center{
   display: flex;

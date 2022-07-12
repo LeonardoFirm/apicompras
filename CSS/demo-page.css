@@ -185,11 +185,11 @@ p,
 }
 
 [class^="hvr-"] {
-  margin: .4em;
-  padding: 1em;
+  margin: .3em;
+  padding: 0.6em;
   cursor: pointer;
   background: #ddd;
-  border-color: rgb(15, 15, 15);
+  border-color: transparent;
   text-decoration: none;
   color: #02022b;
   /* Prevent highlight colour when element is tapped */

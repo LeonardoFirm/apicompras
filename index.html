@@ -106,35 +106,55 @@
     </script>
 
     <div class='container'>
-        <div class='card'>
-
+        <div class='card' id="div_login">
             <h1>Compras</h1><br><br>
-            <form action="menu.html">
-                <div class='label-float'>
-                    <input type='text' id='usuario' paceholder='' required>
-                    <label id='userLabel' for='usuario'>Usuario</label>
-                </div>
-                <div class='label-float'>
-                    <input type='password' id='senha' paceholder='' required>
-                    <label id='senhaLabel' for='senha'>Senha</label>
-
-                    <br><br>
-                    <div class='justify-center'>
-                        <button class="hvr-pulse-grow" onclick='entrar()'>Entrar</button>
-                    </div>
-            </form>
-            <div class='justify-center'>
+            <div class='label-float'>
+                <input type="email" id="emailLabel" placeholder="" required />
+                <label id='emailLabel' for='usuario'>E-mail</label>
             </div>
+            <div class='label-float'>
+                <input type="password" id="senhaLabel" placeholder="" required />
+                <label id='senhaLabel' for='senha'>Senha</label>
 
-            <!-- <div id="social-container">
+                <br><br>
+                <div class='justify-center'>
+                    <button class="hvr-pulse-grow" onclick="entrar()">Acessar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div_logado" id="div_usuario">
+        <h3>
+            <center>AEEEEEEE! Você acessou com sucesso 🎉🎉🎉</center>
+        </h3>
+        <button onclick="window.location.href='menu.html'">Página inicial</button>
+        <button onclick="sair()">Sair</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script>
+        // Configuração do seu aplicativo no Firebase
+        var firebaseConfig = {
+            apiKey: "AIzaSyAgfM6Fg8j0I96nr55-A9ZAC-hUcQhxn6I",
+            authDomain: "apicompras-2174a.firebaseapp.com",
+            projectId: "apicompras-2174a",
+            storageBucket: "apicompras-2174a.appspot.com",
+            messagingSenderId: "442833032153",
+            appId: "1:442833032153:web:412ae5d7e818bd3cc53fc8"
+        };
+        // Inicializa o Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="javascript/firebaseauth.js"></script>
+
+    <!-- <div id="social-container">
             <p>Ou entre elas suas redes sociais</p>
             <i class="fa fa-facebook-f"></i>
             <i class="fa fa-linkedin"></i>
         </div>-->
 
-        </div>
-    </div>
-    </div>
+
     <div class="justify-center">
         <footer>
             <a href="https://www.iubenda.com/privacy-policy/53312082"

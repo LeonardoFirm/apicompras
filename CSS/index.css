@@ -115,7 +115,54 @@ button:hover{
   justify-content: center;
 }
 
-.fa-eye{
+input, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.div_principal, .div_logado {
+  width: 20%;
+  margin: 0px auto;
+  margin-top: 150px;
+  padding: 20px;
+  display: none;
+}
+
+.div_principal input {
+  display: block;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: white;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.div_principal input:focus {
+  border: 1px solid gray;
+}
+
+.div_principal button, .div_logado button {
+  background: #F75D59; 
+  color: white;
+  border: 1px solid #F75D59; 
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.div_principal button:hover, .div_logado button:hover {
+  background: white;
+  color: #F75D59;
+  border: 1px solid #F75D59;
+  cursor: pointer;
+}
+
+/*.fa-eye{
   position: absolute;
   top: 15px;
   right: 10px;
@@ -130,7 +177,7 @@ button:hover{
   padding: 10px;
   border-radius: 4px;
   display: none;
-}
+}*/
 
 p{
   color: #323232;

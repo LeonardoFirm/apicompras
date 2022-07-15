@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  /*background-image: url('../Image/montain.jpg');*/
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card {
+  background-color: rgb(240, 238, 238);
+  padding: 50px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000060;
+  width: 350px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 10px;
+  color: #323232;
+}
+
+h3 {
+  width: auto;
+  border-radius: 10px;
+  margin-top: .5rem;
+  text-align: center;
+  padding: 20px;
+  background-color: DarkSalmon;
+  color: #02022b;
+  box-shadow: 3px 3px 1px 0px #3f3f3f80;
+}
+
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #323232;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  color:  #02022b;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #02022b;
+}
+
+.label-float label{
+  color: #323232;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #02022b;
+}
+
+button{
+  background-color: transparent;
+  border-color: transparent;
+  color: #fff;
+  width: 30%;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #02022b;
+  color: #fff;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+input, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.div_principal, .div_logado {
+  width: 20%;
+  margin: 0px auto;
+  margin-top: 150px;
+  padding: 20px;
+  display: none;
+}
+
+.div_principal input {
+  display: block;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background: white;
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.div_principal input:focus {
+  border: 1px solid gray;
+}
+
+.div_principal button, .div_logado button {
+  background: #F75D59; 
+  color: white;
+  border: 1px solid #F75D59; 
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.div_principal button:hover, .div_logado button:hover {
+  background: white;
+  color: #F75D59;
+  border: 1px solid #F75D59;
+  cursor: pointer;
+}
+
+/*.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #02022b;
+}
+
+ #msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}*/
+
+p{
+  color: #323232;
+  font-size: 10pt;
+  text-align: center;
+}
+
+a{
+  color: #323232;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+a:hover{
+  color: #02022b;
+}
+
+footer {
+  display: block;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: left;
+}
+
+/*.lgpd {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+  background-color: DarkSalmon;
+  color: #02022b;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lgpd a{
+  color: #02022b;
+}
+
+.lgpd button {
+  background-color: rgb(255, 4, 4);
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 30px;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+button:hover{
+  background-color: #02022b;
+}*/

@@ -29,6 +29,18 @@ body {
   width: 350px;
 }
 
+
+p {
+  width: auto;
+  border-radius: 10px;
+  margin-top: .5rem;
+  text-align: center;
+  padding: 10px;
+  background-color: #F75D59;
+  color: #fff;
+  box-shadow: 3px 3px 1px 0px #3f3f3f80;
+}
+
 .teste {
   display: block;
   font-size: small;

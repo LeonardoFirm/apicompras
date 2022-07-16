@@ -51,7 +51,7 @@ li a:hover:not(.active) {
   display: flex;
   justify-content: center;
   width: auto;
-  margin-top: 400px; /* alterar para 40px assim que for implantado a cotação */
+  margin-top: 160px; /* alterar para 40px assim que for implantado a cotação */
 }
 
 .card {
@@ -92,11 +92,9 @@ h5 {
 }
 
 h3 {
-  width: auto;
   border-radius: 10px;
-  margin-top: .5rem;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #202020;
   color: #fff;
   box-shadow: 3px 3px 1px 0px #3f3f3f80;

@@ -85,6 +85,15 @@
         crossorigin="anonymous"></script>
 
 </head>
+<style>
+    #text {
+        font-family: 'Roboto';
+        display: none;
+        color: red;
+        text-align: center;
+        font-style: italic;
+    }
+</style>
 
 <body>
 
@@ -107,15 +116,17 @@
 
     <div class='container'>
         <div class='card' id="div_login">
-            <h1>Compras</h1><br><br>
+            <div class="teste">
+                <h1>Compras <span style="color:#F75D59;font-style: italic;font-size:10pt;">beta</span></h1><br>
+            </div>
             <div class='label-float'>
                 <input type="email" id="emailLabel" placeholder="" required />
                 <label id='emailLabel' for='usuario'>E-mail</label>
             </div>
             <div class='label-float'>
                 <input type="password" id="senhaLabel" placeholder="" required />
-                <label id='senhaLabel' for='senha'>Senha</label>
-
+                <label id='senhaLabel' for='senha'>Senha</label><br>
+                <p id="text">Atenção! Caps Lock ativado.</p>
                 <br><br>
                 <div class='justify-center'>
                     <button class="hvr-pulse-grow" onclick="entrar()">Acessar</button>
@@ -123,6 +134,33 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var input = document.getElementById("emailLabel");
+        var text = document.getElementById("text");
+        input.addEventListener("keyup", function (event) {
+
+            if (event.getModifierState("CapsLock")) {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none"
+            }
+        });
+    </script>
+    <script>
+        var input = document.getElementById("senhaLabel");
+        var text = document.getElementById("text");
+        input.addEventListener("keyup", function (event) {
+
+            if (event.getModifierState("CapsLock")) {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none"
+            }
+        });
+    </script>
+
+
     <div class="div_logado" id="div_usuario">
         <h3>
             <center>AEEEEEEE! Você acessou com sucesso 🎉🎉🎉</center>

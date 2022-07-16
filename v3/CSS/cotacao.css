@@ -51,7 +51,7 @@ li a:hover:not(.active) {
   display: flex;
   justify-content: center;
   width: auto;
-  margin-top: 40px;
+  margin-top: 400px; /* alterar para 40px assim que for implantado a cotação */
 }
 
 .card {

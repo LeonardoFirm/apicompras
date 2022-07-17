@@ -7,7 +7,7 @@
 }
 
 body {
-  /*background-image: url('../Image/montain.jpg');*/
+  background-image: url('../Image/image_api.png');
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +20,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #00000060;
   position: fixed;
   top: 0;
   width: 100%;

@@ -126,7 +126,7 @@
             <div class='label-float'>
                 <input type="password" id="senhaLabel" placeholder="" required />
                 <label id='senhaLabel' for='senha'>Senha</label><br>
-                    <p id="text">Atenção! Caps Lock ativado.</p>
+                <p id="text">Atenção! Caps Lock ativado.</p>
                 <br><br>
                 <div class='justify-center'>
                     <button class="hvr-pulse-grow" onclick="entrar()">Acessar</button>
@@ -160,14 +160,20 @@
         });
     </script>
 
-
     <div class="div_logado" id="div_usuario">
-        <h3>
-            <center>AEEEEEEE! Você acessou com sucesso 🎉🎉🎉</center>
-        </h3>
-        <button onclick="window.location.href='../v3/inicial.html'">Página inicial</button>
-        <button onclick="sair()">Sair</button>
+        <ul class="#">
+            <li><a onclick="window.location.href='./v3/categoria/samsung.html'">Samsung</a></li>
+            <li><a onclick="window.location.href='./v3/categoria/motorola.html'">Motorola</a></li>
+            <li><a onclick="window.location.href='./v3/categoria/lg.html'">LG</a></li>
+            <li><a onclick="window.location.href='./v3/categoria/iphone.html'">Iphone</a></li>
+            <li><a onclick="window.location.href='./v3/categoria/asus.html'">Asus</a></li>
+            <li><a onclick="window.location.href='./v3/categoria/xiaomi.html'">Xiaomi</a></li>
+            <li><a onclick="window.location.href='./v3/ords/os.html'">Pedidos de OS</a></li>
+            <li><a onclick="window.location.href='./v3/price/cotacao.html'">Cotação</a></li>
+            <li style="float:right"><a class="active" onclick="sair()">Sair</a></li>
+        </ul>
     </div>
+    
     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
 
@@ -185,13 +191,6 @@
         firebase.initializeApp(firebaseConfig);
     </script>
     <script src="javascript/firebaseauth.js"></script>
-
-    <!-- <div id="social-container">
-            <p>Ou entre elas suas redes sociais</p>
-            <i class="fa fa-facebook-f"></i>
-            <i class="fa fa-linkedin"></i>
-        </div>-->
-
 
     <div class="justify-center">
         <footer>

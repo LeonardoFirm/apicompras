@@ -7,12 +7,11 @@
 }
 
 body {
-  /*background-image: url('../Image/montain.jpg');*/
+  background-image: url('../price/Image/image_api.png');
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed
-  
+  background-attachment: fixed;
 }
 
 ul {
@@ -20,7 +19,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #00000060;
   position: fixed;
   top: 0;
   width: 100%;
@@ -51,7 +50,7 @@ li a:hover:not(.active) {
   display: flex;
   justify-content: center;
   width: auto;
-  margin-top: 160px; /* alterar para 40px assim que for implantado a cotação */
+  margin-top: 100px; /* alterar para 40px assim que for implantado a cotação */
 }
 
 .card {

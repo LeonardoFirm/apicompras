@@ -15,6 +15,26 @@ body {
   
 }
 
+.circ {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: red;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-delay: -1s;
+  animation: example 5s linear infinite alternate-reverse;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:80px; top:50px;}
+  25%  {background-color:yellow; left:300px; top:50px;}
+  50%  {background-color:blue; left:600px; top:50px;}
+  75%  {background-color:green; left:900px; top:50px;}
+  100% {background-color:red; left:1200px; top:50px;}
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -41,6 +61,7 @@ li a {
 
 li a:hover:not(.active) {
   background-color: #0bc581;
+  border-radius: 50px;
 }
 
 .active {

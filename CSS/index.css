@@ -37,11 +37,11 @@ body {
 }
 
 @keyframes example {
-  0%   {background-color:red; left:500px; top:0px;}
-  25%  {background-color:yellow; left:1000px; top:0px;}
-  50%  {background-color:blue; left:1000px; top:500px;}
-  75%  {background-color:green; left:500px; top:500px;}
-  100% {background-color:red; left:500px; top:0px;}
+  0%   {background-color:red; left:500px; top:100px;}
+  25%  {background-color:yellow; left:1000px; top:100px;}
+  50%  {background-color:blue; left:1000px; top:700px;}
+  75%  {background-color:green; left:500px; top:700px;}
+  100% {background-color:red; left:500px; top:100px;}
 }
 
 .quad {
@@ -58,11 +58,11 @@ body {
 }
 
 @keyframes example2 {
-  0%   {background-color:purple; left:500px; top:0px;}
-  25%  {background-color:blue; left:1000px; top:0px;}
+  0%   {background-color:purple; left:500px; top:100px;}
+  25%  {background-color:blue; left:1000px; top:100px;}
   50%  {background-color:green; left:1000px; top:400px;}
   75%  {background-color:yellow; left:500px; top:400px;}
-  100% {background-color:purple; left:500px; top:0px;}
+  100% {background-color:purple; left:500px; top:100px;}
 }
 
 ul, .div_principal, .div_logado  {

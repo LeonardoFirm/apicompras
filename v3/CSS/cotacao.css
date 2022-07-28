@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url('../Image/api_log.gif');
+  background-image: url('../price/Image/api_log.gif');
   background-color: #323232;
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,10 +84,10 @@ li a:hover:not(.active) {
 }
 
 .card {
-  background-color: rgb(245, 243, 243);
+  background-color: rgba(255, 255, 255, 0.329);
   padding: 30px;
-  border-radius: 4%;
-  box-shadow: 3px 3px 1px 0px #00000060;
+  border-radius: 3%;
+  box-shadow: 0px 0px 0px 0px #00000060;
   width: auto;
 }
 

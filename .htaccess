@@ -1,0 +1,11 @@
+#Habilita o Mod-Rewrite
+RewriteEngine On
+
+Rewritecond %{REQUEST_URI} !-f
+Rewritecond %{REQUEST_URI} !-d
+Rewritecond %{REQUEST_URI} !-l
+#basta alterar o trecho "$1.html [L]" para mudar o tipo de arquivo a ser afetado. Ex.: "$1.html [L]"
+RewriteRule ^([\w\d-]+)$ $1.html [L]
+
+#Para desabilitar o MultView altere o sinal "+" por "-"
+Options +MultiViews

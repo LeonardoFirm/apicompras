@@ -5,5 +5,8 @@ RRewriteEngine On
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule ^([^.]+)$ $1.html [NC,L]
 
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/$1 [L]
+
 #Para desabilitar o MultView altere o sinal "+" por "-"
 Options +MultiViews

@@ -1,6 +1,6 @@
 # API Compras
 
-<p>Esse projeto foi feito com o intuito de auxílio aos colaboradores da empresa em que faço parte <a href="https://www.suprintinformatica.com.br/">Suprint Informática<a/>, sem equecer que está visando o aprendizados de um projeto da faculdade (FAQI) como TCC.</p><hr>
+<p>Esse projeto foi feito com o intuito de auxílio aos colaboradores da empresa em que faço parte <a href="https://www.suprintinformatica.com.br/">Suprint Informática<a/> sem esquecer que está visando o aprendizados de um projeto da faculdade (FAQI) como TCC.</p><hr>
 
 ![api_log](https://user-images.githubusercontent.com/102005275/181599667-bb074fa2-32dd-4464-a573-5684593e4dc2.gif)
 
